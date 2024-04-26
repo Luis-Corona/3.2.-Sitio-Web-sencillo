@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b; /* Negro */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #6a0dad; /* Morado oscuro */
+    color: white;
+    height: 55px;
+    padding: 20px;
+    text-align: center;
+}
+
+.header img {
+    float: left;
+    height: 50px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.body {
+    padding: 0px;
+    color: white;
+    text-align: center;
+}
+
+.body a {
+    color: #af78ff; /* Morado claro */
+}
+
+.body h2 {
+    padding: 20px;
+    margin: 0px;
+}
+
+.footer {
+    background-color: #6a0dad; /* Morado oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.fondo {
+    background-image: url('/Images/fondo3.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el div */
+    background-position: center; /* Centra la imagen horizontalmente */
+    background-attachment: fixed; /* Fija la imagen para que solo cubra el texto */
+    height: 70vh;
+    margin: 5px 0px;
+    align-items: center;
+}
+
+table {
+    align-items: center;
+}
+
+iframe {
+    margin-top: 10px;
+}
