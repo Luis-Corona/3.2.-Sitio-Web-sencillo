@@ -1,0 +1,32 @@
+name: Lint HTML and CSS
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Comprobar el código
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      # 2. Instalar herramientas para validar HTML y CSS
+      - name: Install HTML and CSS Linters
+        run: |
+          sudo apt-get install -y tidy
+          npm install -g stylelint
+
+      # 3. Validar HTML
+      - name: Lint HTML
+        run: tidy -e index.html
+
+      # 4. Validar CSS (en caso de que tu CSS esté en archivos separados)
+      - name: Lint CSS
+        run: stylelint "css/*.css"
