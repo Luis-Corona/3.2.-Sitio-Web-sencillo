@@ -22,6 +22,7 @@ jobs:
         run: |
           sudo apt-get install -y tidy
           npm install -g stylelint
+          npm install --save-dev stylelint-config-standard
 
       # 3. Validar HTML (validará el archivo index.html dentro de la carpeta '3.2. Sitio Web sencillo')
       - name: Lint HTML
