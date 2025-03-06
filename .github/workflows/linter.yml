@@ -25,8 +25,8 @@ jobs:
 
       # 3. Validar HTML (validará el archivo index.html dentro de la carpeta '3.2. Sitio Web sencillo')
       - name: Lint HTML
-        run: tidy -e "3.2. Sitio Web sencillo/index.html"
+        run: tidy -e "3.2.-Sitio-Web-sencillo/index.html"
 
       # 4. Validar CSS (validará el archivo styles.css dentro de la carpeta '3.2. Sitio Web sencillo')
       - name: Lint CSS
-        run: stylelint "3.2. Sitio Web sencillo/styles.css"
+        run: stylelint "3.2.-Sitio-Web-sencillo/styles.css"
