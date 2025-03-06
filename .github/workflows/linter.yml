@@ -29,4 +29,4 @@ jobs:
 
       # 4. Validar CSS (en caso de que tu CSS esté en archivos separados)
       - name: Lint CSS
-        run: stylelint "css/*.css"
+        run: stylelint "css/styles.css"
